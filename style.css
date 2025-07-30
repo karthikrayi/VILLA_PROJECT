@@ -1,0 +1,586 @@
+*{
+    margin-bottom: 0px;
+}
+ol{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.navsocial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialright{
+    margin-right: 100px;
+}
+.socialright>li{
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+}
+.socialleft{
+    margin-left: 75px;
+}
+.socialmedia :hover{
+    color: orangered;
+    border: 5px gainsboro;
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+.navleft{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 130px;
+}
+.navright{
+    font-weight: bold;
+    font-size: 20px;
+}
+.navright ol,li{
+    gap: 75px;
+}
+ol button span{
+   padding: 8px 7px 10px 7px;
+   background-color: #EE5921;
+   border-radius: 50%;
+   text-align: center;
+}
+ol>button{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.navright ol li:hover{
+    color: orangered;
+}
+ol>button:hover{
+    color: orangered;
+}
+.banner{
+    background-image: url("banner-01.jpg");
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.bannertheory{
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    font-size: 30px;
+}
+.bannertheory>h6{
+    background-color: white;
+    color: black;
+    display: inline;
+}
+.featured{
+    display: flex;
+    margin: 100px 120px 100px 140px;
+}
+.leftFeatured{
+    position: relative;
+}
+ .circle-icon {
+    position: absolute;
+    top: 380px;
+    left: -50px;
+    width: 80px;
+    height: 80px;
+    background-color: #EE5921;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.circle-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.leftFeatured>img{
+    height: 420px;
+}
+.middleFeatured>p:first-child{
+    font-size: 12px;
+    font-weight: 400;
+    border-left: 4px solid darkmagenta;
+    color: darkmagenta;
+    padding-left:4px;
+}
+.middleFeatured{
+    margin: 0px 40px 0px 40px;
+}
+.middleFeatured>h3{
+    font-size: 30px;
+    margin: 20px 0px 20px 0px;
+}
+.featuredQuestions{
+    background-color: rgba(248, 248, 248, 0.918);
+    height: 197px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.featuredQuestions>.question{
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+}
+.droped{
+    color: #EE5921;
+}
+.featuredQuestions>.answer{
+    padding: 4px 10px 2px 10px;
+    font-size: 16px;
+}
+.answer>a{
+    text-decoration: none;
+    color: rgb(55, 131, 245);
+}
+.rightFeatured>ul>li{
+    list-style: none;
+}
+.rightFeatured>ul{
+    padding: 10px 20px 8px 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.rightFeatured>ul>li>img{
+    width: 30%;
+}
+.rightFeatured>ul>li{
+    display: flex;
+    margin: 13px;
+}
+.rightFeatured>ul>li>div{
+    margin-left: 4px;
+}
+.rightFeatured>ul>li>div>p:first-child{
+    font-weight: bold;
+}
+.rightFeatured>ul>li>div>p:last-child{
+    font-size: 15px;
+    color: rgb(179, 177, 177);
+}
+.videobg{
+    background-image: url("./video-bg.jpg");
+    height: 70vh;
+    position: relative;
+    border-radius: 20px;
+}
+.videobg>img{
+    position: absolute;
+    width: 65%;
+    left: 235px;
+    top: 300px;
+    border-radius: 10px;   
+}
+.videobg>div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:40px;
+}
+.videobg>div>p{
+    border-left: 4px solid #EE5921;
+    padding-left: 4px;
+    color: #EE5921;
+    font-size: 14px;
+    font-weight: 500;
+}
+.videobg>div>h3{
+    color: white;
+    margin-top: 12px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.play-button{
+    position: absolute;
+    top: 100%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: #EE5921;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.play-button i {
+    font-size: 30px;
+    color: white;
+}
+.company{
+    margin-top: 350px;
+    display: flex;
+    border: #ffeee9;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.companycard1{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #ffeee9;
+    width: 250px;
+    border: 2px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.companycard1 li{
+    color: orangered;
+    font-size: 50px;    
+}
+.companycard1 p{
+    font-weight: bold;
+}
+.companycard2{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #ffeee9;
+    width: 250px;
+    border: 2px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.companycard2 li{
+    color: orangered;
+    font-size: 50px; 
+}
+.companycard2 p{
+    font-weight: bold;
+}
+.companycard3{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #ffeee9;
+    width: 250px;
+    border: 2px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.companycard3 li{
+    color: orangered;
+    font-size: 50px; 
+}
+.companycard3 p{
+    font-weight: bold;
+}
+.circles{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #EE5921;
+    border-radius: 50%;
+    left:210px;
+    top: -30px;
+}
+.cardleft{
+    background-color: whitesmoke;
+    margin-top: 100px;
+}
+.deals{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+.Bestdeals{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+}
+.dealtheory{
+    margin-left: 50px;
+}
+.Bestdeals .app{
+    width: 100px;
+    background-color: #EE5921;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.Bestdeals .villa{
+    width: 100px;
+    background-color: #EE5921;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.Bestdeals .pent{
+    width: 100px;
+    background-color: #EE5921;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.cardflat{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.Flatcard{
+    width: 20%;
+    height: 400px;
+    border: 2px;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 10px;
+    background-color: white;
+    margin-left: 70px;
+    margin-bottom: 100px;
+}
+.Flatcard hr{
+    width: 80%;
+}
+.Flatcard p{
+    color: rgb(190, 190, 190);
+}
+.maincard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mainimg img{
+    width: 580px;
+    margin-bottom: 100px;
+}
+.maintheory p{
+    font-size: 20px;
+    font-style: inherit;
+}
+.maintheory button{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+.maintheory span{
+    background-color: #EE5921;
+    
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.maintheory{
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.cardboardtheory{
+    text-align: center;
+}
+.cardboardtheory h3{
+    color: #EE5921;
+}
+.cardboardtheory h1{
+    font-size: 40px;
+}
+.cardboard{
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.board1 img{
+    border-radius: 15px;
+}
+.board1{
+    width: 23%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 30px;
+}
+.boardtheory1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.boardtheory1 li{
+    border-radius: 10px;
+    background-color: hsl(13, 51%, 78%);
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.boardtheory1 h2{
+    color: #EE5921;
+}
+.boards1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.board-par button{
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.board-par button:hover{
+    background-color: #EE5921;
+}
+.boards2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.contactsupport{
+    background-image: url('./contact-bg.jpg');
+    height: 80vh;
+    margin-top: 100px;
+    position: relative;
+}
+.contacttheory{
+    text-align: center;
+    font-size: 30px;
+    padding: 80px;
+}
+.contacttheory h2{
+    color: #EE5921;
+    
+}
+.contacttheory h1{
+    color: white;
+
+}
+.contactmap{
+    margin-left: 150px;
+}
+.contactform{
+    width: 30%;
+    height: 600px;
+    background-color: rgb(253, 252, 252);
+    position: absolute;
+    top: 400px;
+    left: 900px;
+    border-radius: 10px;
+}
+.username{
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
+}
+.username label{
+    font-size: 20px;
+}
+.username input{
+    padding: 2px 200px 20px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+.useremail{
+       margin-top: 20px;
+       margin-left: 30px;
+       color: rgb(197, 195, 195);
+}
+.useremail label{
+    font-size: 20px;
+}
+.useremail input{
+    padding: 2px 200px 20px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+.usersubject{
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
+}
+.usersubject label{
+    font-size: 20px;
+}
+.usersubject input{
+    padding: 2px 200px 20px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+.usermessage{
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
+}
+.usermessage label{
+    font-size: 20px;
+}
+.usermessage textarea{
+    padding: 2px 200px 50px 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+.usermessage button{
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    color: white;
+}
+.usermessage button:hover{
+     background-color: #EE5921;
+}
+.phone{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.phonecard{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+footer{
+    width: 100%;
+    margin-top: 450px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0px;
+}
+footer>p{
+    margin-left: 200px;
+}
