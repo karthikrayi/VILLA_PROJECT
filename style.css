@@ -96,6 +96,7 @@ ol>button {
     height: 90vh;
     width: 100%;
     position: relative;
+    margin-top: 50px;
 }
 
 .bannertheory {
@@ -764,4 +765,275 @@ ol>button {
 }
 .prop-footer p{
     text-align: center;
+}
+
+
+/* Properties-details */
+
+.prop-details-bgimg {
+  position: relative; /* must be positioned */
+  z-index: 1;         /* this starts a stacking context */
+  background-image: url("./page-heading-bg (1).jpg");
+  height: 50vh;
+  margin-top: 30px;
+}
+
+.prop-details-bgimg p,
+.prop-details-bgimg h1 {
+  position: absolute; /* required for z-index to work */
+  z-index: 2;         /* ensures they appear above the background */
+}
+.prop-details-bgimg p{
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+    background-color: white;
+    width: 240px;
+    height: 30px;
+    margin-left: 630px;
+    margin-top: 120px;
+    text-align: center;
+}
+.prop-details-bgimg h1{
+    color: white;
+    font-size: 50px;
+    margin-left: 480px;
+    margin-top: 180px;
+}
+.prop-details-rightFeatured>ul>li {
+    list-style: none;
+    width: 200px;
+}
+
+.prop-details-rightFeatured>ul {
+    padding: 10px 20px 8px 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.prop-details-rightFeatured>ul>li>img {
+    width: 20%;
+}
+
+.prop-details-rightFeatured>ul>li {
+    display: flex;
+    margin: 13px;
+    width: 350px;
+}
+
+.prop-details-rightFeatured>ul>li>div {
+    margin-left: 4px;
+}
+
+.prop-details-rightFeatured>ul>li>div>p:first-child {
+    font-weight: bold;
+}
+
+.prop-details-rightFeatured>ul>li>div>p:last-child {
+    color: rgb(179, 177, 177);
+}
+.prop-details-rightFeatured>hr{
+    width: 15%;
+}
+.prop-details-card{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+.prop-details-card img{
+    width: 53%;
+}
+.prop-details-rightFeatured{
+    width: 25%;
+}
+.prop-details-tag{
+    margin-left: 180px;
+}
+.prop-details-tag p{
+    border-radius: 10px;
+    background-color: pink;
+    width: 8%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.prop-details-theory p{
+    margin-left: 140px;
+    padding: 20px;
+    line-height: 29px;
+}
+.prop-details-questions{
+    margin-left: 155px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+}
+.prop-details-questions p{
+     line-height: 30px;
+}
+.prop-details-footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0px;
+}
+.prop-details-footer p{
+    text-align: center;
+}
+
+/* Contact Us */
+
+
+.contact-us-bgimg {
+  position: relative; /* must be positioned */
+  z-index: 1;         /* this starts a stacking context */
+  background-image: url("./page-heading-bg (1).jpg");
+  height: 50vh;
+  margin-top: 30px;
+}
+
+.contact-us-bgimg p,
+.contact-us-bgimg h1 {
+  position: absolute; /* required for z-index to work */
+  z-index: 2;         /* ensures they appear above the background */
+}
+.contact-us-bgimg p{
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+    background-color: white;
+    width: 240px;
+    height: 30px;
+    margin-left: 620px;
+    margin-top: 120px;
+    text-align: center;
+}
+.contact-us-bgimg h1{
+    color: white;
+    font-size: 50px;
+    margin-left: 580px;
+    margin-top: 180px;
+}
+.contact-us-card{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.contact-us-theory{
+     margin-left: 0px;
+}
+.contact-us-theory h2{
+    color: #EE5921;
+}
+.contact-us-theory h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+.contact-us-theory p{
+    font-size: 18px;
+    color: rgb(86, 85, 85);
+    line-height: 30px;
+}
+.contact-us-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 35%;
+    padding: 10px 5px 10px 5px;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+/* contact us form */
+.contact-us-form{
+   background-color: #f8f5f5;
+   border-radius: 10px;
+   width: 30%;
+}
+.contact-us-username {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
+}
+
+.contact-us-username label {
+    font-size: 20px;
+}
+
+.contact-us-username input {
+    padding: 2px 200px 20px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+.contact-us-useremail {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
+}
+
+.contact-us-useremail label {
+    font-size: 20px;
+}
+
+.contact-us-useremail input {
+    padding: 2px 200px 20px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+.contact-us-usersubject {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
+}
+
+.contact-us-usersubject label {
+    font-size: 20px;
+}
+
+.contact-us-usersubject input {
+    padding: 2px 200px 20px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+.contact-us-usermessage {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
+}
+
+.contact-us-usermessage label {
+    font-size: 20px;
+}
+
+.contact-us-usermessage textarea {
+    padding: 2px 200px 50px 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+.contact-us-usermessage button {
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.contact-us-usermessage button:hover {
+    background-color: #EE5921;
 }
