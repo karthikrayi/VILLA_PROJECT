@@ -1,32 +1,37 @@
-*{
+* {
     margin-bottom: 0px;
 }
-ol{
+
+ol {
     list-style: none;
     display: flex;
     gap: 25px;
 }
-.navsocial{
+
+.navsocial {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.socialright{
+
+.socialright {
     margin-right: 100px;
 }
-.socialright>li{
+
+.socialright>li {
     border-radius: 50%;
     border: 5px solid whitesmoke;
 }
-.socialleft{
+
+.socialleft {
     margin-left: 75px;
 }
-.socialmedia :hover{
+
+.socialmedia :hover {
     color: orangered;
-    border: 5px gainsboro;
-    border-radius: 50%;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,61 +42,86 @@ nav{
     background-color: white;
     width: 100%;
 }
-.navleft{
+
+.navleft {
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 130px;
 }
-.navright{
+
+.navright {
     font-weight: bold;
     font-size: 20px;
 }
-.navright ol,li{
+
+.navright ol,
+li {
     gap: 75px;
 }
-ol button span{
-   padding: 8px 7px 10px 7px;
-   background-color: #EE5921;
-   border-radius: 50%;
-   text-align: center;
+
+ol button span {
+    padding: 8px 13px 8px 13px;
+    background-color: #EE5921;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin-right: 10px;
 }
-ol>button{
+
+ol>button {
+    padding: 0px 10px 0px 0px;
     border-radius: 20px;
     background-color: black;
     color: white;
+    margin-right: 20px;
 }
-.navright ol li:hover{
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.navright ul li a:hover {
+    color: #EE5921;
+}
+
+.nav-link.active {
     color: orangered;
+    text-decoration: none;
 }
-ol>button:hover{
-    color: orangered;
-}
-.banner{
+
+.banner {
     background-image: url("banner-01.jpg");
     height: 90vh;
     width: 100%;
     position: relative;
 }
-.bannertheory{
+
+.bannertheory {
     color: white;
     position: absolute;
     top: 200px;
     left: 250px;
     font-size: 30px;
 }
-.bannertheory>h6{
+
+.bannertheory>h6 {
     background-color: white;
     color: black;
     display: inline;
 }
-.featured{
+
+.featured {
     display: flex;
     margin: 100px 120px 100px 140px;
 }
-.leftFeatured{
+
+.leftFeatured {
     position: relative;
 }
- .circle-icon {
+
+.circle-icon {
     position: absolute;
     top: 380px;
     left: -50px;
@@ -109,107 +139,128 @@ ol>button:hover{
 .circle-icon img {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
-.leftFeatured>img{
+.leftFeatured>img {
     height: 420px;
 }
-.middleFeatured>p:first-child{
+
+.middleFeatured>p:first-child {
     font-size: 12px;
     font-weight: 400;
     border-left: 4px solid darkmagenta;
     color: darkmagenta;
-    padding-left:4px;
+    padding-left: 4px;
 }
-.middleFeatured{
+
+.middleFeatured {
     margin: 0px 40px 0px 40px;
 }
-.middleFeatured>h3{
+
+.middleFeatured>h3 {
     font-size: 30px;
     margin: 20px 0px 20px 0px;
 }
-.featuredQuestions{
+
+.featuredQuestions {
     background-color: rgba(248, 248, 248, 0.918);
     height: 197px;
     border-radius: 10px;
     padding: 10px;
 }
-.featuredQuestions>.question{
+
+.featuredQuestions>.question {
     font-size: 15px;
     padding: 10px;
     font-weight: 500;
 }
-.droped{
+
+.droped {
     color: #EE5921;
 }
-.featuredQuestions>.answer{
+
+.featuredQuestions>.answer {
     padding: 4px 10px 2px 10px;
     font-size: 16px;
 }
-.answer>a{
+
+.answer>a {
     text-decoration: none;
     color: rgb(55, 131, 245);
 }
-.rightFeatured>ul>li{
+
+.rightFeatured>ul>li {
     list-style: none;
 }
-.rightFeatured>ul{
+
+.rightFeatured>ul {
     padding: 10px 20px 8px 20px;
     margin-left: 20px;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.rightFeatured>ul>li>img{
+
+.rightFeatured>ul>li>img {
     width: 30%;
 }
-.rightFeatured>ul>li{
+
+.rightFeatured>ul>li {
     display: flex;
     margin: 13px;
 }
-.rightFeatured>ul>li>div{
+
+.rightFeatured>ul>li>div {
     margin-left: 4px;
 }
-.rightFeatured>ul>li>div>p:first-child{
+
+.rightFeatured>ul>li>div>p:first-child {
     font-weight: bold;
 }
-.rightFeatured>ul>li>div>p:last-child{
+
+.rightFeatured>ul>li>div>p:last-child {
     font-size: 15px;
     color: rgb(179, 177, 177);
 }
-.videobg{
+
+.videobg {
     background-image: url("./video-bg.jpg");
     height: 70vh;
     position: relative;
     border-radius: 20px;
 }
-.videobg>img{
+
+.videobg>img {
     position: absolute;
     width: 65%;
     left: 235px;
     top: 300px;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
-.videobg>div:first-child{
+
+.videobg>div:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top:40px;
+    padding-top: 40px;
 }
-.videobg>div>p{
+
+.videobg>div>p {
     border-left: 4px solid #EE5921;
     padding-left: 4px;
     color: #EE5921;
     font-size: 14px;
     font-weight: 500;
 }
-.videobg>div>h3{
+
+.videobg>div>h3 {
     color: white;
     margin-top: 12px;
     font-size: 30px;
     font-weight: 800;
 }
-.play-button{
+
+.play-button {
     position: absolute;
     top: 100%;
     left: 47%;
@@ -224,18 +275,21 @@ ol>button:hover{
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .play-button i {
     font-size: 30px;
     color: white;
 }
-.company{
+
+.company {
     margin-top: 350px;
     display: flex;
     border: #ffeee9;
     align-items: center;
     justify-content: space-evenly;
 }
-.companycard1{
+
+.companycard1 {
     list-style: none;
     display: flex;
     align-items: center;
@@ -247,14 +301,17 @@ ol>button:hover{
     justify-content: space-evenly;
     position: relative;
 }
-.companycard1 li{
+
+.companycard1 li {
     color: orangered;
-    font-size: 50px;    
+    font-size: 50px;
 }
-.companycard1 p{
+
+.companycard1 p {
     font-weight: bold;
 }
-.companycard2{
+
+.companycard2 {
     list-style: none;
     display: flex;
     align-items: center;
@@ -266,14 +323,17 @@ ol>button:hover{
     justify-content: space-evenly;
     position: relative;
 }
-.companycard2 li{
+
+.companycard2 li {
     color: orangered;
-    font-size: 50px; 
+    font-size: 50px;
 }
-.companycard2 p{
+
+.companycard2 p {
     font-weight: bold;
 }
-.companycard3{
+
+.companycard3 {
     list-style: none;
     display: flex;
     align-items: center;
@@ -285,68 +345,82 @@ ol>button:hover{
     justify-content: space-evenly;
     position: relative;
 }
-.companycard3 li{
+
+.companycard3 li {
     color: orangered;
-    font-size: 50px; 
+    font-size: 50px;
 }
-.companycard3 p{
+
+.companycard3 p {
     font-weight: bold;
 }
-.circles{
+
+.circles {
     position: absolute;
     width: 50px;
     height: 50px;
     background-color: #EE5921;
     border-radius: 50%;
-    left:210px;
+    left: 210px;
     top: -30px;
 }
-.cardleft{
+
+.cardleft {
     background-color: whitesmoke;
     margin-top: 100px;
 }
-.deals{
+
+.deals {
     display: flex;
     justify-content: space-between;
     padding: 100px;
 }
-.Bestdeals{
+
+.Bestdeals {
     display: flex;
     align-items: center;
     gap: 30px;
     margin-right: 50px;
 }
-.dealtheory{
+
+.dealtheory {
     margin-left: 50px;
 }
-.Bestdeals .app{
+.dealtheory p{
+    color: #EE5921;
+}
+.Bestdeals .app {
     width: 100px;
     background-color: #EE5921;
     align-items: center;
     padding: 20px;
     font-weight: bold;
 }
-.Bestdeals .villa{
+
+.Bestdeals .villa {
     width: 100px;
     background-color: #EE5921;
     align-items: center;
     padding: 20px;
     font-weight: bold;
 }
-.Bestdeals .pent{
+
+.Bestdeals .pent {
     width: 100px;
     background-color: #EE5921;
     align-items: center;
     padding: 20px;
     font-weight: bold;
 }
-.cardflat{
+
+.cardflat {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
 }
-.Flatcard{
+
+.Flatcard {
     width: 20%;
     height: 400px;
     border: 2px;
@@ -357,91 +431,91 @@ ol>button:hover{
     margin-left: 70px;
     margin-bottom: 100px;
 }
-.Flatcard hr{
+
+.Flatcard hr {
     width: 80%;
 }
-.Flatcard p{
+
+.Flatcard p {
     color: rgb(190, 190, 190);
 }
-.maincard{
+
+.maincard {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.mainimg img{
+
+.mainimg img {
     width: 580px;
     margin-bottom: 100px;
 }
-.maintheory p{
+
+.maintheory p {
     font-size: 20px;
     font-style: inherit;
 }
-.maintheory button{
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 15px;
-    border-radius: 15px;
-    background-color: black;
-    color: white;
-}
-.maintheory span{
-    background-color: #EE5921;
-    
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 50%;
-    background-size: cover;
-}
-.maintheory{
+
+.maintheory {
     margin-right: 50px;
     margin-bottom: 100px;
 }
-.cardboardtheory{
+
+.cardboardtheory {
     text-align: center;
+    margin-bottom: 50px;
 }
-.cardboardtheory h3{
+
+.cardboardtheory h3 {
     color: #EE5921;
 }
-.cardboardtheory h1{
+
+.cardboardtheory h1 {
     font-size: 40px;
 }
-.cardboard{
+
+.cardboard {
     margin-top: 100px;
     border-radius: 10px;
 }
-.board1 img{
+
+.board1 img {
     border-radius: 15px;
 }
-.board1{
+
+.board1 {
     width: 23%;
     background-color: whitesmoke;
     padding: 20px;
     border-radius: 30px;
 }
-.boardtheory1{
+
+.boardtheory1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
 }
-.boardtheory1 li{
+
+.boardtheory1 li {
     border-radius: 10px;
     background-color: hsl(13, 51%, 78%);
     padding: 6px;
     padding-left: 10px;
     padding-right: 10px;
 }
-.boardtheory1 h2{
+
+.boardtheory1 h2 {
     color: #EE5921;
 }
-.boards1{
+
+.boards1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.board-par button{
+
+.board-par button {
     margin-left: 100px;
     margin-top: 30px;
     padding: 10px;
@@ -451,38 +525,46 @@ ol>button:hover{
     background-color: black;
     color: white;
 }
-.board-par button:hover{
+
+.board-par button:hover {
     background-color: #EE5921;
 }
-.boards2{
+
+.boards2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 30px;
 }
-.contactsupport{
+
+.contactsupport {
     background-image: url('./contact-bg.jpg');
     height: 80vh;
     margin-top: 100px;
     position: relative;
 }
-.contacttheory{
+
+.contacttheory {
     text-align: center;
     font-size: 30px;
     padding: 80px;
 }
-.contacttheory h2{
+
+.contacttheory h2 {
     color: #EE5921;
-    
+
 }
-.contacttheory h1{
+
+.contacttheory h1 {
     color: white;
 
 }
-.contactmap{
+
+.contactmap {
     margin-left: 150px;
 }
-.contactform{
+
+.contactform {
     width: 30%;
     height: 600px;
     background-color: rgb(253, 252, 252);
@@ -491,73 +573,88 @@ ol>button:hover{
     left: 900px;
     border-radius: 10px;
 }
-.username{
+
+.username {
     margin-top: 20px;
     margin-left: 30px;
     color: rgb(197, 195, 195);
 }
-.username label{
+
+.username label {
     font-size: 20px;
 }
-.username input{
+
+.username input {
     padding: 2px 200px 20px 20px;
     border-radius: 20px;
     margin-top: 20px;
     background-color: whitesmoke;
 }
-.useremail{
-       margin-top: 20px;
-       margin-left: 30px;
-       color: rgb(197, 195, 195);
+
+.useremail {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(197, 195, 195);
 }
-.useremail label{
+
+.useremail label {
     font-size: 20px;
 }
-.useremail input{
+
+.useremail input {
     padding: 2px 200px 20px 20px;
     border-radius: 20px;
     margin-top: 20px;
     background-color: whitesmoke;
 }
-.usersubject{
+
+.usersubject {
     margin-top: 20px;
     margin-left: 30px;
     color: rgb(197, 195, 195);
 }
-.usersubject label{
+
+.usersubject label {
     font-size: 20px;
 }
-.usersubject input{
+
+.usersubject input {
     padding: 2px 200px 20px 20px;
     border-radius: 20px;
     margin-top: 20px;
     background-color: whitesmoke;
 }
-.usermessage{
+
+.usermessage {
     margin-top: 20px;
     margin-left: 30px;
     color: rgb(197, 195, 195);
 }
-.usermessage label{
+
+.usermessage label {
     font-size: 20px;
 }
-.usermessage textarea{
+
+.usermessage textarea {
     padding: 2px 200px 50px 20px;
     border-radius: 20px;
     margin-bottom: 50px;
     margin-top: 20px;
     background-color: whitesmoke;
 }
-.usermessage button{
+
+.usermessage button {
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
     background-color: black;
     color: white;
 }
-.usermessage button:hover{
-     background-color: #EE5921;
+
+.usermessage button:hover {
+    background-color: #EE5921;
 }
-.phone{
+
+.phone {
     width: 20%;
     padding: 10px;
     display: flex;
@@ -566,14 +663,16 @@ ol>button:hover{
     border-radius: 20px;
     background-color: whitesmoke;
 }
-.phonecard{
+
+.phonecard {
     display: flex;
     align-items: center;
     gap: 30px;
     margin-top: 50px;
     margin-left: 200px;
 }
-footer{
+
+.home-footer{
     width: 100%;
     margin-top: 450px;
     background-color: black;
@@ -581,6 +680,88 @@ footer{
     color: white;
     margin-bottom: 0px;
 }
-footer>p{
+
+.home-footer>p {
     margin-left: 200px;
+}
+
+/* Properties */
+
+.prop-bg-img {
+  position: relative; /* must be positioned */
+  z-index: 1;         /* this starts a stacking context */
+  background-image: url("./page-heading-bg (1).jpg");
+  height: 50vh;
+  margin-top: 30px;
+}
+
+.prop-bg-img p,
+.prop-bg-img h1 {
+  position: absolute; /* required for z-index to work */
+  z-index: 2;         /* ensures they appear above the background */
+}
+.prop-bg-img p{
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+    background-color: white;
+    width: 220px;
+    height: 30px;
+    margin-left: 630px;
+    margin-top: 120px;
+    text-align: center;
+}
+.prop-bg-img h1{
+    color: white;
+    font-size: 50px;
+    margin-left: 580px;
+    margin-top: 180px;
+}
+.prop-Bestdeals{
+    margin-top: 100px;
+    margin-left: 500px;
+    display: flex;
+    gap: 20px;
+}
+.prop-Bestdeals button{
+    padding: 13px 18px;
+    border-radius: 11px;
+    background-color: black;
+    color: white;
+}
+.prop-Bestdeals button:hover{
+    color: #EE5921;
+    background-color: black;
+}
+.prop-link.active{
+    background-color: #EE5921;
+    color: white;
+}
+.footer-above-prop-button{
+    margin-top: 70px;
+    margin-left: 650px;
+    display: flex;
+    gap: 10px;
+}
+.footer-above-prop-button button{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.footer-above-prop-button button:hover{
+    background-color: #EE5921;
+}
+.footer-above-link.active{
+    background-color: #EE5921;
+}
+.prop-footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0px;
+}
+.prop-footer p{
+    text-align: center;
 }
