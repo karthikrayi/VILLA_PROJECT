@@ -1,13 +1,11 @@
 * {
     margin-bottom: 0px;
 }
-
 ol {
     list-style: none;
     display: flex;
     gap: 25px;
 }
-
 .navsocial {
     display: flex;
     justify-content: space-between;
@@ -17,7 +15,6 @@ ol {
 .socialright {
     margin-right: 100px;
 }
-
 .socialright>li {
     border-radius: 50%;
     border: 5px solid whitesmoke;
@@ -30,6 +27,50 @@ ol {
 .socialmedia :hover {
     color: orangered;
 }
+/* for tab */
+@media (max-width: 768px) {
+  .navsocial {
+    justify-content: space-around;
+  }
+  .navsocial ol {
+    gap: 15px;
+    flex-direction: row;
+  }
+  .socialleft {
+    margin-left: 30px;
+  }
+  .socialright {
+    margin-right: 30px;
+  }
+}
+
+/*for Mobile*/
+@media (max-width: 576px) {
+  .navsocial {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .navsocial ol {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .socialleft,
+  .socialright {
+    margin: 10px 0;
+  }
+  .socialright {
+    margin-right: 0;
+  }
+  .socialleft,
+  .socialright ol{
+   flex-direction: row;
+  }
+}
+
+/* body below div section completed. */
+
+/*  nav section start */
 
 nav {
     display: flex;
@@ -90,9 +131,64 @@ ol>button {
     color: orangered;
     text-decoration: none;
 }
+@media (max-width: 1024px) {
+  .navright ol {
+    gap: 50px;
+  }
+  .navleft {
+    margin-left: 100px;
+  }
+  nav {
+    margin-right: 50px;
+  }
+}
+
+/* for Tablet */
+@media (max-width: 768px) {
+  .navright ol {
+    gap: 30px;
+  }
+  .navleft {
+    margin-left: 60px;
+    font-size: 28px;
+  }
+  nav {
+    margin-right: 30px;
+  }
+}
+
+/* for Mobile */
+@media (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    margin-right: 0;
+  }
+  .navleft {
+    margin-left: 10px;
+    font-size: 26px;
+  }
+  .navright ol {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .navright ol li {
+    width: 100%;
+  }
+
+}
+
+/* nav section completed */
+
+/* header banner */
 
 .banner {
     background-image: url("banner-01.jpg");
+    background-size: cover;
+    background-position: center;
     height: 90vh;
     width: 100%;
     position: relative;
@@ -113,9 +209,58 @@ ol>button {
     display: inline;
 }
 
+/* Tablet — screens */
+@media (max-width: 1024px) {
+  .bannertheory {
+    top: 170px;
+    left: 150px;
+    font-size: 24px;
+  }
+  .bannertheory > h6 {
+    font-size: 22px;
+  }
+}
+
+/* Mobile — screens */
+@media (max-width: 768px) {
+  .bannertheory {
+    top: 130px;
+    left: 50px;
+    font-size: 20px;
+  }
+  .bannertheory > h6 {
+    font-size: 18px;
+  }
+}
+
+/* Small phones — screens */
+@media (max-width: 576px) {
+  .banner {
+    height: 60vh;
+  }
+  .bannertheory {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .bannertheory > h6 {
+    font-size: 16px;
+  }
+  .bannertheory h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
+
+/* header banner completed */
+
+/* featured section */
+
 .featured {
     display: flex;
     margin: 100px 120px 100px 140px;
+    gap: 40px;
 }
 
 .leftFeatured {
@@ -224,6 +369,65 @@ ol>button {
     color: rgb(179, 177, 177);
 }
 
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .featured {
+    flex-direction: column;
+    margin: 80px 60px;
+  }
+  .leftFeatured > img {
+    height: auto;
+    max-width: 100%;
+  }
+  .circle-icon {
+    top: 300px;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  .middleFeatured, .rightFeatured {
+    margin: 20px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .middleFeatured > h3 {
+    font-size: 24px;
+  }
+  .featuredQuestions {
+    height: auto;
+  }
+  .rightFeatured ul li img {
+    width: 25%;
+  }
+}
+
+/* smartphone*/
+@media (max-width: 576px) {
+  .featured {
+    margin: 40px 20px;
+    display: flex;
+  }
+  .middleFeatured > p:first-child {
+    font-size: 11px;
+  }
+  .middleFeatured > h3 {
+    font-size: 20px;
+  }
+  .question {
+    font-size: 14px;
+  }
+  .answer {
+    font-size: 14px;
+  }
+ 
+}
+
+/* featured section completed */
+
+/* div video section  */
+
 .videobg {
     background-image: url("./video-bg.jpg");
     height: 70vh;
@@ -281,6 +485,100 @@ ol>button {
     font-size: 30px;
     color: white;
 }
+
+/* Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .videobg {
+    height: 60vh;
+  }
+
+  .videobg > img {
+    width: 80%;
+    left: 10%;
+    top: 20%;
+  }
+
+  .videobg > div:first-child {
+    padding-top: 20px;
+  }
+
+  .videobg > div > p {
+    font-size: 12px;
+  }
+
+  .videobg > div > h3 {
+    font-size: 24px;
+  }
+
+  .play-button {
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Tablets (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .videobg {
+    height: 65vh;
+  }
+
+  .videobg > img {
+    width: 70%;
+    left: 15%;
+    top: 25%;
+  }
+
+  .videobg > div:first-child {
+    padding-top: 30px;
+  }
+
+  .videobg > div > p {
+    font-size: 13px;
+  }
+
+  .videobg > div > h3 {
+    font-size: 26px;
+  }
+
+  .play-button {
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .videobg {
+    height: 70vh;
+  }
+
+  .videobg > img {
+    width: 65%;
+    left: 235px;
+    top: 300px;
+  }
+
+  .videobg > div:first-child {
+    padding-top: 40px;
+  }
+
+  .videobg > div > p {
+    font-size: 14px;
+  }
+
+  .videobg > div > h3 {
+    font-size: 30px;
+  }
+
+  .play-button {
+    top: 100%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 
 .company {
     margin-top: 350px;
