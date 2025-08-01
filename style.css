@@ -1037,3 +1037,17 @@ ol>button {
 .contact-us-usermessage button:hover {
     background-color: #EE5921;
 }
+.contact-us-map{
+    margin-top: 100px;
+}
+.contact-us-footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0px;
+}
+.contact-us-footer p{
+    text-align: center;
+}
